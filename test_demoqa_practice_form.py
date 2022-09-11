@@ -1,9 +1,8 @@
-import time
-
 import pytest
 from selene.support.shared import browser
 from selene import be, have
 from selene import config
+from conftest import upload_file
 
 config.hold_browser_open = True
 
@@ -12,6 +11,8 @@ last_name = 'Sem'
 email = 'demotest@tete.com'
 mobile_number = '9570000000'
 current_address = 'Saint - P'
+file = 'images/donut.png'
+
 
 def test_demoqa():
     browser.open_url('https://demoqa.com/automation-practice-form')
@@ -44,7 +45,7 @@ def test_demoqa():
     browser.element('[for="hobbies-checkbox-3"]').click()
 
     # image
-    browser.element('#uploadPicture').send_keys('/images/donut.png')
+    #browser.element('#uploadPicture').send_keys(file)
 
     #Address
 
