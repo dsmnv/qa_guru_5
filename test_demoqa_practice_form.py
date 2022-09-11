@@ -1,8 +1,7 @@
-import pytest
-from selene.support.shared import browser
-from selene import be, have
-from selene import config
 import os.path
+from selene.support.shared import browser
+from selene import be, have, config
+
 
 
 config.hold_browser_open = True
