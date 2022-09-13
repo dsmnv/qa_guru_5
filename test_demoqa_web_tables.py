@@ -16,25 +16,12 @@ def test_demoqa_web_tables_edit():
     browser.open_url('https://demoqa.com/webtables')
     browser.element('#edit-record-2').click()
     browser.element('#registration-form-modal').should(have.text('Registration Form'))
-
-    browser.element('#firstName').clear()
-    browser.element('#firstName').type('la')
-
-    browser.element('#lastName').clear()
-    browser.element('#lastName').type("lo")
-
-    browser.element('#userEmail').clear()
-    browser.element('#userEmail').type(email)
-
-    browser.element('#age').clear()
-    browser.element('#age').type("33")
-
-    browser.element('#salary').clear()
-    browser.element('#salary').type("7777")
-
-    browser.element('#department').clear()
-    browser.element('#department').type("dep")
-
+    browser.element('#firstName').clear().type('la')
+    browser.element('#lastName').clear().type("lo")
+    browser.element('#userEmail').clear().type(email)
+    browser.element('#age').clear().type("33")
+    browser.element('#salary').clear().type("7777")
+    browser.element('#department').clear().type("dep")
     browser.element('#submit').click()
 
 
