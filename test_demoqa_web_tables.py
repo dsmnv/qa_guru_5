@@ -1,6 +1,6 @@
 from selene.support.shared import browser
 from selene import be, have, config
-import pytest
+
 
 config.hold_browser_open = True
 
@@ -23,7 +23,6 @@ def test_demoqa_web_tables_edit():
     browser.element('#salary').clear().type("7777")
     browser.element('#department').clear().type("dep")
     browser.element('#submit').click()
-
 
 def test_demoqa_web_tables_delete():
     browser.element('#delete-record-3').click()
