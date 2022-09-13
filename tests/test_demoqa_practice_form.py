@@ -27,7 +27,7 @@ def test_demoqa():
     browser.element('#subjectsInput').type('Eng').press_enter().type('comp').press_enter()
     browser.element('[for="hobbies-checkbox-2"]').click()
     browser.element('[for="hobbies-checkbox-3"]').click()
-    browser.element('#uploadPicture').send_keys(os.path.abspath('images/donut.png'))
+    browser.element('#uploadPicture').send_keys(os.path.abspath('../images/donut.png'))
     browser.element('#currentAddress').type(current_address)
     browser.element('#react-select-3-input').type('ncr').press_enter()
     browser.element('#react-select-4-input').type('gurgaon').press_enter()
