@@ -25,9 +25,11 @@ def test_demoqa_web_tables_edit():
     browser.element('#submit').click()
 
 def test_demoqa_web_tables_delete():
+    browser.open_url('https://demoqa.com/webtables')
     browser.element('#delete-record-3').click()
 
 def test_demoqa_web_tables_add():
+    browser.open_url('https://demoqa.com/webtables')
     browser.element('#addNewRecordButton').click()
     browser.element('#firstName').type(first_name)
     browser.element('#lastName').type(last_name)
